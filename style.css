@@ -24,6 +24,13 @@
     list-style-type: none;
 }
 
+#navbar > ul > li:hover{
+    background-color: #242527;
+}
+
+
+
+
 #navbar > ul > li > a{
     text-decoration: none;
     text-align: center;
@@ -58,7 +65,7 @@
     font-size: 35px;
 }
 
-#project{
+#projects{
     background-color: #45567D;
     display: flex;
     flex-direction: column;
@@ -114,19 +121,35 @@ hr{
 }
 
 
-#project > a > h4 {
+#projects > a > h4 {
     color: white;
     background-color: #303840;
     word-spacing: 5px;
     padding: 10px;
     margin-bottom: 70px;
+    
 }
 
+#projects > a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+#projects > a > h4:hover{
+    background-color:#BE3144
+}
 
 
 
 .project-title > h2 > span{
     color: #303840;
+}
+
+.project-sections:hover > .project-title > h2 > span{
+    animation-delay: 2s;
+    animation: ease ;
+    color: orange;
 }
 
 
@@ -165,6 +188,20 @@ hr{
      margin-bottom: 100px;
  }
 
+.buttons{
+    transition: transform 250ms;
+}
+
+
+ .buttons:hover {
+     transform: translateY(15px);
+ }
+
+ .buttons a {
+     text-decoration: none;
+ }
+
+
  .buttons svg{
      padding-right: 5px;
  }
@@ -174,4 +211,12 @@ hr{
      font-weight: lighter;
  }
 
+@media screen  and (max-width: 600px){
+    .buttons-section{
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+}
+    
 
